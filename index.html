@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>William Hung</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <ul>
+        <li class="nav__links"><a href="pages/career.html">Career</a></li>
+        <li class="nav__links"><a href="pages/personal.html">Personal</a></li>
+        <li class="nav__mainLink nav__links"><a href="index.html">William Hung</a></li>
+        <li class="nav__links"><a href="pages/news.html">News Feed</a></li>
+        <li class="nav__links"><a href="pages/extras.html">Extras Report</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mainPic">
+    <img id="hungPortrait" src="images/williamHung.jpg"> <!--Main image on page-->
+  </div>
+
+  <article>
+    <header class="article__header">
+      <h1 class="article__header--title">Executive Summary</h1>
+    </header>
+
+    <section class="article__section">
+
+      <div style="display: flex; justify-content: space-evenly; width: 100%">
+        <button onclick="playSheBangs()" id="sheBangs" type="button" style="margin-top: 15px; color: #143e6e; margin-bottom: 10px; width: 35%; padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 18px; font-weight: bolder; background-color: #EAC4D5;">Hear "She Bangs"</button>
+        <button onclick="playSheMoves()" id="sheMoves" type="button" style="margin-top: 15px; color: #143e6e; margin-bottom: 10px; width: 35%; padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 18px; font-weight: bolder; background-color: #EAC4D5;">Hear "She Moves"</button>
+      </div>
+
+      <div>
+        <h2 class="section__subtitle">Known Collaborators of William Hung</h2>  <!--Title of section in content block.-->
+        <p class="section__content" style="text-align: center">Larry Platt & William Hung - "Pants On The Ground"</p> <!--Content of section in content block.-->
+        <iframe width="597" height="336" src="https://www.youtube.com/embed/F8nME7RsuVM" frameborder="0" style="margin-bottom: 25px" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="section__content" style="text-align: center">Ricky Martin & William Hung - "She Bangs"</p> <!--Content of section in content block.-->
+        <video width="597" height="336" controls><source src="https://scontent-atl3-1.cdninstagram.com/vp/60c30a5f002859a0496e14f1708dceae/5BBE6158/t50.2886-16/33676355_1973951329585215_3559926391099097088_n.mp4?rel=0" type="video/mp4"></video> 
+      </div>
+
+      <div>
+        <h2 class="section__subtitle" style="margin-top: 40px;">A Portrait Of An Icon</h2>  <!--Title of 2nd section in content block.-->
+        <p class="section__content"><img src="http://district52speakersbureau.com/wp-content/uploads/Willian-Hung-0021ret-240x300.jpg" style="margin-top: 15px; width: 100%; border-radius: 10px"></p> <!--Content of 2nd section in content block.-->
+        <p class="section__content">William James Hung, aka Hung Hing Cheong</p>
+      </div>
+
+      <div>
+        <h2 class="section__subtitle">Known Aliases</h2>  <!--Title of 3rd section in content block.-->
+        <p class="section__content" style="text-align: center">Hung Hing Cheong</p> <!--Content of 3rd section in content block.-->
+      </div>
+
+      <div>
+        <h2 class="section__subtitle">Country of Residence</h2>  <!--Title of 4th section in content block.-->
+        <p class="section__content" style="text-align: center">William was born in Sha Tin, Hong Kong, and moved to Camden, New Jersey in 1993. He later moved to Los Angeles, California and still resides there today.</p> <!--Content of 4th section in content block.-->
+      </div>
+
+    </section>
+
+  </article>
+
+  <footer class="footer">
+    <ul>
+      <li class="footer__links"><a href="https://www.facebook.com/wh532/"><img src="images/facebook.png"></a></li> <!--Facebook page-->
+      <li class="footer__links"><a href="https://twitter.com/whungspeaking"><img src="images/twitter.png"></a></li>  <!--Twitter page-->
+      <li class="footer__links"><a href="https://www.instagram.com/willhung328/"><img src="images/instagram.png"></a></li> <!--Instagram page-->
+      <li class="footer__links"><a href="https://www.youtube.com/channel/UCLQ9CY0bOg4uF3uQmYy-mlg"><img src="images/youtube.png"></a></li> <!--Youtube channel-->
+    </ul>
+
+  </footer>
+
+  <audio id="bangsAudio">
+    <source src="audio/shortSheBangs.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="movesAudio">
+      <source src="audio/shortSheMoves.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="noRegretsAudio">
+      <source src="audio/noregrets.mp3" type="audio/mpeg">
+  </audio>
+  <script src="main.js"></script>
+</body>
+
+</html>
